@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Function</title>
 </head>
 <body>
+	<form>
+		Enter 1st Number: <input type="text" id="num1">
+		Enter 2nd Number: <input type="text" id="num2">
+		<button type="Submit" onclick="plus()"> CALCULATE add </button>
+		<button type="Submit" onclick="subtract()"> CALCULATE subtract </button>
+		<button type="Submit" onclick="multiply()"> CALCULATE multiply</button>
+		<button type="Submit" onclick="divide()"> CALCULATE divide </button>
 
+
+	</form>
+
+	<script>
+		function plus(){
+			var num1 = document. getElementById("num1").value;
+			var num2 = document. getElementById("num2").value;
+				var sum = Number(num1) + Number(num2)
+			window.alert("The sum is:"+ sum)
+		}
+
+		function subtract(){
+			var num1 = document. getElementById("num1").value;
+			var num2 = document. getElementById("num2").value;
+				var difference = Number(num1) - Number(num2)
+			window.alert("The difference is:"+ difference)
+		}
+
+		function multiply(){
+			var num1 = document. getElementById("num1").value;
+			var num2 = document. getElementById("num2").value;
+				var product = Number(num1) * Number(num2)
+			window.alert("The product is:"* product)
+		}
+
+		function divide(){
+			var num1 = document. getElementById("num1").value;
+			var num2 = document. getElementById("num2").value;
+				var quotient = Number(num1) / Number(num2)
+			window.alert("The quotient is:"/ quotient)
+		}
+
+
+	</script>
 </body>
 </html>
